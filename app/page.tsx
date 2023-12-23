@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import Header from './COMPONENTS/Header'
+import Header from './COMPONENTS/Layouts/Header'
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="container">
       <Header/>
     </main>
   )

@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className='bg-slate-900 container p-3 flex justify-between gap-10 items-center'>
+    <header className='bg-slate-900 container p-3 flex justify-between gap-10 items-center w-full'>
 
       <div className="flex justify-start gap-10 items-center">
 
