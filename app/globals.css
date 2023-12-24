@@ -17,5 +17,11 @@
 }
 
 body {
-  
+  margin-top: 0px;
+}
+
+#header{
+  z-index: 1000;
+  position:absolute;
+  top: 0;
 }
