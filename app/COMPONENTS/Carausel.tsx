@@ -10,7 +10,7 @@ import Image from 'next/image';
 // Import Swiper styles
 import 'swiper/css';
 
-export default () => {
+function Carausel(){
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s: any, time: any, progress: any) => {
@@ -48,3 +48,5 @@ export default () => {
     </div>
   );
 };
+
+export default Carausel;
