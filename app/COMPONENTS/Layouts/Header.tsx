@@ -13,7 +13,7 @@ const Header = () => {
   const searchbarForMobileClassNames = `links w-full text-center sm:hidden ${searchbarClassName ? 'hidden' : 'block'}`;
 
   return (
-    <header id='header' className='bg-slate-900/[.9] container p-3 flex flex-col justify-between items-center w-full'>
+    <header id='header' className='bg-slate-900 container p-3 flex flex-col justify-between items-center w-full'>
 
       <div className='container flex justify-between items-center w-full'>
         <div className="flex justify-start gap-10 items-center">

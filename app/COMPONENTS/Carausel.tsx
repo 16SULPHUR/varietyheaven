@@ -2,37 +2,43 @@
 
 // Import Swiper React components
 import React, { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade } from 'swiper/modules';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image';
 import Link from 'next/link';
 
-// Import Swiper styles
 import 'swiper/css';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-function Carausel() {
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+function Carausel(props: any) {
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s: any, time: any, progress: any) => {
   };
   return (
-    <div className='mt-16 p-3 sm:p-0 '>
+    <div className='sm:pt-16 mx-3 sm:mx-0 mt-20 mb-5 sm:my-0'>
       <Swiper
+        spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 1000,
+          delay: 2500,
           disableOnInteraction: false,
         }}
-        navigation={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={false}
         modules={[Autoplay, Pagination, Navigation]}
-        onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper"
+        className="mySwiper rounded-lg"
       >
         <SwiperSlide>
           <Link href='/'>
             <Image
-              src={"/carausal-image-1.jpg"}
+              src={`/${props.dir}/1.jpg`}
               alt="IMG1"
               width={2000}
               height={200}
@@ -42,7 +48,7 @@ function Carausel() {
         <SwiperSlide>
           <Link href='/'>
             <Image
-              src={"/carausal-image-3.jpg"}
+              src={`/${props.dir}/3.jpg`}
               alt="IMG1"
               width={2000}
               height={200}
@@ -52,7 +58,7 @@ function Carausel() {
         <SwiperSlide>
           <Link href='/'>
             <Image
-              src={"/carausal-image-2.jpg"}
+              src={`/${props.dir}/2.jpg`}
               alt="IMG1"
               width={2000}
               height={200}
