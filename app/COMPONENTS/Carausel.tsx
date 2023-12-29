@@ -20,7 +20,7 @@ function Carausel(props: any) {
   const onAutoplayTimeLeft = (s: any, time: any, progress: any) => {
   };
   return (
-    <div className='sm:pt-16 mx-3 sm:mx-0 mt-20 mb-5 sm:my-0'>
+    <div className='sm:pt-16 mx-3 sm:mx-0 mt-3 mb-5 sm:my-0'>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
