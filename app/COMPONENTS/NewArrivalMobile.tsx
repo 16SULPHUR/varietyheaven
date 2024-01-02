@@ -11,12 +11,13 @@ import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-function HorizontalScrollingCatagoriesCards() {
+function NewArrivalMobile() {
   return (
     <div className='w-80 rounded-lg'>
       <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
+        spaceBetween={7}
+        slidesPerView={1.07}
+        centeredSlides={false}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
@@ -52,4 +53,4 @@ function HorizontalScrollingCatagoriesCards() {
 }
 
 
-export default HorizontalScrollingCatagoriesCards;
+export default NewArrivalMobile;

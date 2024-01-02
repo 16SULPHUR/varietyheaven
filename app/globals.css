@@ -21,6 +21,7 @@ body::-webkit-scrollbar, ul::-webkit-scrollbar {
 
 body {
   margin-top: 0px;
+  /* overflow-x: hidden; */
 }
 
 #header {
@@ -49,6 +50,12 @@ body {
   z-index: 100;
 }
 
+#topSellerDiv{
+  z-index:100;
+  top:-2.3rem;
+  /* left:32%; */
+}
+
 @media (max-width: 600px) {
   /* .content {
     background: linear-gradient(
@@ -71,5 +78,11 @@ body {
     position: relative;
     margin-top: 0px;
     z-index: 100;
+  }
+
+  #topSellerDiv{
+    z-index:100;
+    top:-1.1rem;
+    /* left:15%; */
   }
 }

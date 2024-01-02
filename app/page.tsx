@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Header from './COMPONENTS/Layouts/Header'
 import Carousel from './COMPONENTS/Carausel'
 import ActionAreaCard from './COMPONENTS/ActionAreaCard'
-import HorizontalScrollingCatagoriesCards from './COMPONENTS/HorizontalScrollingCatagoriesCards'
+import NewArrivalMobile from './COMPONENTS/NewArrivalMobile'
 import HeaderCatagories from './COMPONENTS/HeaderCatagories';
 import NewArrivalDesktop from './COMPONENTS/NewArrivalDesktop';
 import TopPics from './COMPONENTS/TopPics';
@@ -37,9 +37,9 @@ export default function Home() {
         <ActionAreaCard />
       </div> */}
 
-      <div className='mx-auto block md:block lg:hidden w-max shadow-lg rounded-lg relative'>
-        <HorizontalScrollingCatagoriesCards />
-        <div className="absolute sm:hidden md:block block px-2 py-1" style={{ top: "-1.1rem", right: "-1.1rem", zIndex: "1000" }}>
+      <div className='mx-auto mb-12 block md:block lg:hidden w-max shadow-lg rounded-lg relative'>
+        <NewArrivalMobile />
+        <div className="absolute sm:hidden md:block block px-2 py-1" style={{ top: "-1.1rem", right: "-1.1rem", zIndex: "100" }}>
           <Image
             src={"/new-arrival-lable.png"}
             alt='new arrival'

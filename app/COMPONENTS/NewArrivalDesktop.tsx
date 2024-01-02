@@ -12,12 +12,12 @@ const NewArrivalDesktop = () => {
                 spaceBetween={30}
                 centeredSlides={false}
 
-                slidesPerView={4}
+                slidesPerView={4.3}
                 pagination={{
                     clickable: true,
                 }}
                 autoplay={{
-                    delay: 200,
+                    delay: 1200,
                     disableOnInteraction: false,
                 }}
                 navigation={true}
