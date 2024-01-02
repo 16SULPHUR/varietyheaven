@@ -22,14 +22,11 @@ function Carausel(props: any) {
   return (
     <div className='sm:pt-16 mx-3 sm:mx-0 mt-3 mb-5 sm:my-0'>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={0}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
         }}
         navigation={false}
         modules={[Autoplay, Pagination, Navigation]}

@@ -45,6 +45,7 @@ body {
 #displayCards {
   position: relative;
   margin-top: -280px;
+  margin-bottom: 20px;
   z-index: 100;
 }
 

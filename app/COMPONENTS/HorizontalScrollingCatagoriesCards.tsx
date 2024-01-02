@@ -9,11 +9,11 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // import required modules
-import { Autoplay, Pagination, Navigation} from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 function HorizontalScrollingCatagoriesCards() {
   return (
-    <div className='w-80'>
+    <div className='w-80 rounded-lg'>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
